@@ -1,5 +1,10 @@
 # RoverAPI
 A lightweight API to control your robot over local wifi.
+
+This is a lovely IoT project I made that spans multiple platforms. This is the Arduino code for the base program for a rover that can be controlled through basic HTTP requests. This program is so cool because it's ridiculously easy to set up and customize. This can be paired with any script or live app across any internet connected device. We made a python app, an Android app, and a web app that all controlled the rover. It's like a server on wheels!
+
+The only drawback about this is that the rover was never equipped with encoders- these would tell you how far your rover has travelled. If I ever revisit this project, I would add encoders and send that data back in the HTTP response. However, this program is well-documented enough that anyone can pick it up and customize it completely. 
+
 ## Description
 The Rover API is a lightweight program that allows you to control your robot with simple HTTP commands such as "192.168.240.1/arduino/forward/120" which would send the rover forward at 120 speed. This program is uploaded directly to your microcontroller. It connects to local wifi and you're good to go.
 ## What You Need
